@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #000;
+}
+
+.alert-container {
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 1000000000000;
+}
+
+.warning-icon-container img{
+    width: 10rem;
+    height: 10rem;
+    place-self: center;
+}
+
+.warning-text-container {
+    color: #fff;
+    text-align: center;
+    font-size: 1.4rem;
+    margin: 0 2rem;
+}
+
+.warning-text-container p {
+    margin: 1rem 0;
+}
+
+.alert-container button {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: .8rem;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.disable {
+    visibility: hidden;
+    z-index: -1000000000;
+}
+
+.kitty-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.kitty-container .kitty {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:contain;
+    align-self: center;
+}
+
+.kitty-container button{
+    position: absolute;
+    bottom: 0;
+    padding: 1.2rem 2rem;
+    font-size: 2rem;
+    border: none;
+    border-radius: 1.2rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+}
