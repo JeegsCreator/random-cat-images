@@ -87,3 +87,31 @@ body {
     margin-bottom: 8rem;
     cursor: pointer;
 }
+
+#loading {
+    border: .8rem solid #fff;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: absolute;
+    z-index: 10000;
+    align-self: center;
+    position: relative;
+    clip-path: circle(4rem at 0rem 0rem);
+    animation: infinite 1.25s linear infinite;
+    visibility: hidden;
+}
+
+@keyframes infinite {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    
+    50% {
+        transform: rotateZ(180deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
